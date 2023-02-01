@@ -9,12 +9,12 @@
 
 .App-header {
   background-color: #1f618d;
-  height: 150px;
+  height: 100px;
   padding: 20px;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .App-intro {
