@@ -4,13 +4,15 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
 }
 
 .navbar img {
     height: 5rem;
+    padding: 0.5rem;
 }
 
-.menu li {
+.menu {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -18,7 +20,11 @@
     align-items: center;
 }
 
-.menu li ul a {
+.menu li {
+    padding: 0.5rem;
+}
+
+.menu li Link{
     text-decoration: none;
     font-size: 1.5rem;
     color: white;

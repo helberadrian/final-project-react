@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 import NavBar from './components/navbar';
-import CartWidget from './components/cartWidget';
-
 
 // Pages
 import Home from "./pages/home/index";
@@ -15,10 +13,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div className="App-header">
-            <NavBar />
-            <CartWidget number={0}></CartWidget>
-          </div>
+          <NavBar />
           <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/category/:categoryId' element={<Category />} />
