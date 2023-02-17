@@ -3,8 +3,9 @@ import './styles.css';
 
 const ItemDetailContainer = ({data}) => {
     return (
-        <div className="container">
-            <p>Detalle</p>
+        <div className="productBox">
+            <p>{data.name}</p>
+            <p>{data.username}</p>
         </div>
     );
 };

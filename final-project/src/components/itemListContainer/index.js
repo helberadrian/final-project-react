@@ -14,19 +14,13 @@ const ItemListContainer = () => {
         );
     }, []);
 
-    console.log(products);
-
     return (
         <div className="productList">
         {products.map((product) => {
             return (
-            <div className="productBox">
-                <p>{product.name}</p>
-                <p>{product.username}</p>
                 <Link to={`/product/${product.id}`}>
                     <ItemDetailContainer key={product.id} data={product} />
                 </Link>
-            </div>
             );
         })}
         </div>
