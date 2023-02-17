@@ -6,6 +6,7 @@ import NavBar from './components/navbar';
 // Pages
 import Home from "./pages/home/index";
 import Category from "./pages/category/index";
+import CategoryDetail from "./pages/categoryDetail/index"
 import Product from "./pages/product/index";
 
 class App extends Component {
@@ -16,7 +17,8 @@ class App extends Component {
           <NavBar />
           <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/category/:categoryId' element={<Category />} />
+              <Route path='/category/' element={<Category />} />
+              <Route path='/category/:categoryId' element={<CategoryDetail />} />
               <Route path='/product/:productId' element={<Product />} />
           </Routes>
         </div>
