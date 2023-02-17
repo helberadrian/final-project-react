@@ -7,11 +7,10 @@ import ItemDetailContainer from "../../components/itemDetailContainer/index"
 const Product = () => {
     const [product, setProduct] = useState({});
 
-    let { id } = useParams();
-    console.log(id);
+    const id = useParams();
 
     useEffect(() => {
-        axios(`https://jsonplaceholder.typicode.com/users/${id}`).then((res) =>
+        axios(`https://jsonplaceholder.typicode.com/users/${id.productId}`).then((res) =>
         setProduct(res.data)
         );
     }, [id]);
